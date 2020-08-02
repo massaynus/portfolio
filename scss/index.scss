@@ -58,18 +58,16 @@ nav {
 }
 
 main {
-    background-color: $darker_grey;
-    // background-image: url("../../img/bg.jpg");
-    // background-size: contain;
-    height: 500px;
-    color: $light_red;
+    background-image: linear-gradient(to bottom, lighten($dark_grey, 1), $darker_grey);
+    height: 400px;
+    color: $the_white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
     .mainContainer {
-        height: 500px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -149,6 +147,11 @@ section {
     padding: 10px;
 
     .Languages {
+        a {
+            text-decoration: none;
+            color: $dark_grey;
+        }
+
         h3 {
             display: inline;
             padding: .5rem 1rem;
@@ -186,6 +189,36 @@ section {
                 margin: 20px 5px;
                 width: 95%;
                 list-style-position: inside;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark_grey;
+    color: $the_white;
+    padding: 2rem;
+
+    ul {
+        list-style: none;
+        margin-bottom: 20px;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                margin-left: 10px;
+                text-decoration: none;
+                color: $the_white;
+
+                &:hover {
+                    color: $light_red;
+                }
             }
         }
     }
