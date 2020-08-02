@@ -1,126 +1,192 @@
 @import "colors";
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  height: 100vh;
-  max-width: 100vw;
-  background-color: $the_white;
-  color: $dark_grey;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    height: 100vh;
+    max-width: 100vw;
+    background-color: $the_white;
+    color: $dark_grey;
 }
 
 nav {
-  height: auto;
-  padding: 0.5rem;
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  h1 {
-    font-family: "Tangerine", cursive;
-    font-weight: bold;
-    font-size: 50px;
-  }
-
-  ul {
-    width: fit-content;
-    list-style: none;
+    height: auto;
+    padding: 0.5rem;
+    position: static;
+    top: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 
-    li {
-      padding: 1rem 2rem;
-      border-radius: 25px;
-
-      a {
-        text-decoration: none;
-        color: black;
-      }
-
-      &:hover {
-        border-radius: 5px;
-        background-color: $light_grey;
-        cursor: pointer;
-      }
+    h1 {
+        font-family: "Tangerine", cursive;
+        font-weight: bold;
+        font-size: 50px;
     }
-  }
+
+    ul {
+        width: fit-content;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        li {
+            padding: 1rem 2rem;
+            border-radius: 25px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            &:hover {
+                border-radius: 5px;
+                background-color: $light_grey;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 main {
-  background-color: $darker_grey;
-  height: 500px;
-  color: $light_red;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  .mainContainer {
+    background-color: $darker_grey;
+    // background-image: url("../../img/bg.jpg");
+    // background-size: contain;
     height: 500px;
+    color: $light_red;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
 
-    h2 {
-      font-size: 3rem;
-    }
+    .mainContainer {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-    span {
-      position: relative;
-      margin-top: 50px;
-
-      a {
-        text-decoration: none;
-        color: $light_grey;
-        border: 1px solid $light_grey;
-        padding: 1rem 2rem;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: -1rem;
-          left: 0;
-          background-color: rgba(255, 255, 255, 0.3);
-          width: 100%;
-          height: 52px;
-          clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
-          transition: clip-path 0.35s cubic-bezier(0.39, 0.8, 0.05, 1.84);
+        h2 {
+            font-size: 3rem;
         }
 
-        &:hover {
-          color: $the_white;
-          border-color: $the_white;
+        span {
+            position: relative;
+            margin-top: 50px;
 
-          &::before {
-            clip-path: polygon(0 0, 75% 0%, 41% 100%, 0% 100%);
-            background-color: rgba(255, 255, 255, 0.5);
-          }
+            a {
+                text-decoration: none;
+                color: $light_grey;
+                border: 1px solid $light_grey;
+                padding: 1rem 2rem;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -1rem;
+                    left: 0;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    width: 100%;
+                    height: 52px;
+                    clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+                    transition: clip-path 0.35s cubic-bezier(0.39, 0.8, 0.05, 1.84);
+                }
+
+                &:hover {
+                    color: $the_white;
+                    border-color: $the_white;
+
+                    &::before {
+                        clip-path: polygon(0 0, 75% 0%, 41% 100%, 0% 100%);
+                        background-color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 section {
-  margin-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span.title {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+        h1 {
+            display: block;
+        }
+
+        span {
+            height: 3px;
+            width: 100%;
+            background-color: darken($color: $light_grey, $amount: .5);
+            border-radius: 50%;
+        }
+    }
 }
 
 #Whoami {
-  padding: 2rem;
-  text-align: center;
-  p {
-    margin-top: 25px;
-  }
+    padding: 2rem;
+}
+
+#Myskills {
+    padding: 10px;
+
+    .Languages {
+        h3 {
+            display: inline;
+            padding: .5rem 1rem;
+            background-color: $light_grey;
+            cursor: pointer;
+        }
+
+        margin-bottom: 15px;
+    }
+
+    .skillsContent {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .card {
+            border: 1px dashed $dark_red;
+            flex: 1;
+            margin: 5px;
+            height: 250px;
+
+            .header {
+                background-color: $dark_red;
+                color: $the_white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100px;
+            }
+
+            ul {
+                margin: 20px 5px;
+                width: 95%;
+                list-style-position: inside;
+            }
+        }
+    }
 }
