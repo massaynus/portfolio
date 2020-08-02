@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  height: 100vh;
+  max-width: 100vw;
+  background-color: #ECECEC;
+  color: #1D1D1D;
+}
+
+nav {
+  height: auto;
+  padding: 0.5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav h1 {
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+nav ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li:hover {
+  border-radius: 5px;
+  background-color: #BFBFBF;
+  cursor: pointer;
+}
+
+main {
+  background-color: #131313;
+  height: 500px;
+  color: #CF291D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .mainContainer {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .mainContainer h2 {
+  font-size: 3rem;
+}
+
+main .mainContainer span {
+  position: relative;
+  margin-top: 50px;
+}
+
+main .mainContainer span a {
+  text-decoration: none;
+  color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  padding: 1rem 2rem;
+}
+
+main .mainContainer span a::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 52px;
+  -webkit-clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+          clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+  -webkit-transition: -webkit-clip-path 0.35s cubic-bezier(0.39, 0.8, 0.05, 1.84);
+  transition: -webkit-clip-path 0.35s cubic-bezier(0.39, 0.8, 0.05, 1.84);
+  transition: clip-path 0.35s cubic-bezier(0.39, 0.8, 0.05, 1.84);
+  transition: clip-path 0.35s cubic-bezier(0.39, 0.8, 0.05, 1.84), -webkit-clip-path 0.35s cubic-bezier(0.39, 0.8, 0.05, 1.84);
+}
+
+main .mainContainer span a:hover {
+  color: #ECECEC;
+  border-color: #ECECEC;
+}
+
+main .mainContainer span a:hover::before {
+  -webkit-clip-path: polygon(0 0, 75% 0%, 41% 100%, 0% 100%);
+          clip-path: polygon(0 0, 75% 0%, 41% 100%, 0% 100%);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+section {
+  margin-top: 20px;
+}
+
+#Whoami {
+  padding: 2rem;
+  text-align: center;
+}
+
+#Whoami p {
+  margin-top: 25px;
+}
