@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./dist/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tangerine:wght@700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/115d6b35e1.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
@@ -19,14 +20,14 @@
             <li id="link2"><a href="#Whoami">Who am i</a></li>
             <li id="link3"><a href="#Myskills">My skills</a></li>
             <li id="link4"><a href="https://github.com/massaynus?tab=repositories" target="_blank">Projects</a></li>
-            <li id="link5"><a href="#Contactme" target="_blank">Contact Me</a></li>
+            <li id="link5"><a href="#Contactme">Contact Me</a></li>
         </ul>
     </nav>
     <main id="home">
         <div class="mainContainer">
             <h2>Let's go above and beyond!</h2>
             <p>Together, we will make your dreams a reality</p>
-            <span><a href="mailto:massaoudi.yass@gmail.com" class="btn">Contact me</a></span>
+            <span><a href="mailto:massaoudi.yass@gmail.com" class="btn" target="_blank">Contact me</a></span>
         </div>
         <div class="mainContainer">
             <img src="./img/portrait.png" alt="My portrait" height="400px">
@@ -40,14 +41,14 @@
         </span>
         <p>
             I am a young developer who is passionate about everything computer related.<br />
-            I started learning programming since i was 16 and managed to go through the journey of becoming self
+            I started programming since i was 16 and managed to go through the journey of becoming self
             thought. I also managed to do a lot of projects and freelance work too.<br />
             One of my best experineces was an internship of three months, afterwards I became a full time multi purpose
             developer for the same company while I was only 19 years old.<br />
             And now, I think I am ready to <strong>step up my game!</strong><br />
             Why should you hire me?<br />
-            using my experience I will get get the work done quick, and that is not the only thing, I will assure that
-            the code I write is properly documented, clean and optimised!<br />
+            using my experience I will get the work done quick, and that is not the only thing, I will assure that
+            the code I write is properly documented, clean and optimised, so anyone pick right after me!<br />
         </p>
     </section>
 
@@ -66,6 +67,9 @@
             </a>
             <a target="_blank" href="https://www.google.com/search?q=csharp+8">
                 <h3>C# 8</h3>
+            </a>
+            <a target="_blank" href="https://www.google.com/search?q=EF6">
+                <h3>Entity Framework 6</h3>
             </a>
             <a target="_blank" href="https://www.google.com/search?q=php7">
                 <h3>PHP 7</h3>
@@ -107,8 +111,10 @@
                 </div>
                 <ul class="skillsList">
                     <li>PHP7</li>
-                    <li>ASP.NET MVC / WebForms</li>
+                    <li>ASP: MVC, WebAPI, WebForms</li>
                     <li>Laravel</li>
+                    <li>WordPress</li>
+                    <li>Shopify</li>
                 </ul>
             </div>
             <div class="card">
@@ -155,24 +161,23 @@
     <footer id="Contactme">
         <ul>
             <li>
-                <p>E-mail:</p>
-                <a href="#">massaoudi.yass@gmail.com</a>
+                <a href="mailto:massaoudi.yass@gmail.com" target="_blank"><i class="far fa-paper-plane"></i></a>
             </li>
 
             <li>
-                <p>IG:</p>
-                <a href="#"> @massaynus</a>
+                <a href="https://www.instagram.com/massaynus/" target="_blank"> <i class="fab fa-instagram"></i> </a>
             </li>
 
             <li>
-                <p>GSM:</p>
-                <a href="#"> 00212674723786</a>
+                <a href="https://wa.me/212674723786" target="_blank"> <i class="fab fa-whatsapp"></i></a>
             </li>
         </ul>
-        <p>Elmassaoudi yassine &#169; 2020</p>
+        <p>Elmassaoudi Yassine &#169; <span id="year"></span> </p>
     </footer>
 
-    <script src="./js/index.js" defer></script>
+    <script src="./js/index.js" defer>
+
+    </script>
 </body>
 
 </html>

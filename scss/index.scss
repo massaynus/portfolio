@@ -195,6 +195,7 @@ section {
 }
 
 footer {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,13 +207,13 @@ footer {
     ul {
         list-style: none;
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
 
         li {
-            display: flex;
-            justify-content: space-between;
-
             a {
                 margin-left: 10px;
+                font-size: 35px;
                 text-decoration: none;
                 color: $the_white;
 

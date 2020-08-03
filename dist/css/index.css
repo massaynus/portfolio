@@ -270,6 +270,7 @@ section span.title span {
 }
 
 footer {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,19 +292,18 @@ footer {
 footer ul {
   list-style: none;
   margin-bottom: 20px;
-}
-
-footer ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 footer ul li a {
   margin-left: 10px;
+  font-size: 35px;
   text-decoration: none;
   color: #ECECEC;
 }
