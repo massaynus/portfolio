@@ -28,18 +28,20 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #1D1D1D;
 }
 
 nav h1 {
   font-family: "Tangerine", cursive;
   font-weight: bold;
   font-size: 50px;
+  color: #ECECEC;
 }
 
 nav ul {
@@ -47,9 +49,7 @@ nav ul {
   width: -moz-fit-content;
   width: fit-content;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -109,6 +109,10 @@ main .mainContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main .mainContainer img {
+  display: none;
 }
 
 main .mainContainer h2 {
@@ -202,19 +206,38 @@ section span.title span {
 
 #Myskills {
   padding: 10px;
+  max-width: 100vw;
+}
+
+#Myskills .LanguagesContainer {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+#Myskills .LanguagesContainer::-webkit-scrollbar {
+  display: none;
 }
 
 #Myskills .Languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
   margin-bottom: 15px;
 }
 
 #Myskills .Languages a {
   text-decoration: none;
   color: #1D1D1D;
+  margin-right: 5px;
 }
 
 #Myskills .Languages a h3 {
-  display: inline;
   padding: .5rem 1rem;
   background-color: #BFBFBF;
   cursor: pointer;
@@ -225,10 +248,10 @@ section span.title span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
